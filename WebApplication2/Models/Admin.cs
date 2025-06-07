@@ -1,0 +1,24 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using static System.Collections.Specialized.BitVector32;
+
+namespace WebApplication2.Models
+{
+    public class Admin
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int AdminId { get; set; }
+        public string Username { get; set; }
+
+        [Required(ErrorMessage = "EmailAddress Required")]
+        [EmailAddress(ErrorMessage = "Enter Correct Email")]
+        public string Email { get; set; } 
+        public string PasswordHash { get; set; }
+
+        public ICollection<Course>? Courses { get; set; }
+        public ICollection<Lecture>? Lectures { get; set; }
+        public ICollection<Section>? Sections { get; set; }
+    }
+
+}
