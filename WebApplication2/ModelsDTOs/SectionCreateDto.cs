@@ -1,10 +1,16 @@
-﻿namespace WebApplication2.ModelsDTOs
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace WebApplication2.ModelsDTOs
 {
     public class SectionCreateDto
     {
+        [Required(ErrorMessage = "Title is required.")]
         public string Title { get; set; }
-        public IFormFile SectionLocation { get; set; }  // يمكن التعامل مع الملف هنا بشكل خاص عند رفعه
+        [Required(ErrorMessage = "PDFFile is required.")]
+        public IFormFile SectionPDF { get; set; }
+        [Required(ErrorMessage = "LectureId is required.")]
         public int LectureId { get; set; }
+        [Required(ErrorMessage = "AdminId is required.")]
         public int AdminId { get; set; }
     }
 

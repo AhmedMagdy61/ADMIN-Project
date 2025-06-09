@@ -10,7 +10,7 @@ namespace WebApplication2.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CourseId { get; set; }
         public string Title { get; set; }
-        public string photoLoction { get; set; } = string.Empty;
+        public string Photo { get; set; } = string.Empty;
         public int AdminId { get; set; }
         // [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         [JsonIgnore]

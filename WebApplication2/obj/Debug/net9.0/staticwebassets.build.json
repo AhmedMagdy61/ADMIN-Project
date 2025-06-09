@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z4QTCfRWvxTLdinw2jkPX7SL0VrWLPQh7W5lbgDpK14=",
+  "Hash": "L3KaB5Lll15n2vp8a6xYeZP9rbWDAjIHXOtEoEFdtAc=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "WebApplication2\\wwwroot",
       "Source": "WebApplication2",
-      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\311071780_3187620441487532_502986135333144940_n.jpg",
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\683ae493-d762-492e-abaf-c78a2173e6c0.pdf",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
-      "RelativePath": "uploads/311071780_3187620441487532_502986135333144940_n#[.{fingerprint}]?.jpg",
+      "RelativePath": "uploads/Course/Lecture/683ae493-d762-492e-abaf-c78a2173e6c0#[.{fingerprint}]?.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,19 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b4xus5ugr4",
-      "Integrity": "K7Pby98qIMQC3DqUouJqn+d3jicopd88llYOKIqObb8=",
+      "Fingerprint": "umirtziega",
+      "Integrity": "6h8itWV9BGmPgnLKeXCoAgcFWykcL9xQxiZDlbkoYRw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\311071780_3187620441487532_502986135333144940_n.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Course\\Lecture\\683ae493-d762-492e-abaf-c78a2173e6c0.pdf"
     },
     {
-      "Identity": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\download.jpg",
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
-      "RelativePath": "uploads/Course/download#[.{fingerprint}]?.jpg",
+      "RelativePath": "uploads/Course/Lecture/af63b2dc-6f27-4b4f-be54-fb8b976fe657#[.{fingerprint}]?.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,19 +52,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7ltltlkhig",
-      "Integrity": "9UV4v0CLg4ejWBPLS1yBR7XRJwhm8f9mhsDJXwjscOo=",
+      "Fingerprint": "q6e7ca1h4u",
+      "Integrity": "bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Course\\download.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Course\\Lecture\\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf"
     },
     {
-      "Identity": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\1- Compiler Revision Theoretical Part.pdf",
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\lec-1.pdf",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\",
       "BasePath": "_content/WebApplication2",
-      "RelativePath": "uploads/Course/Lecture/1- Compiler Revision Theoretical Part#[.{fingerprint}]?.pdf",
+      "RelativePath": "uploads/Course/Section/lec-1#[.{fingerprint}]?.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -73,80 +73,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pe9ehcvd0d",
-      "Integrity": "IbitEALFj8kzkmMfzJdIidsrm/osTTHGl59zmpwk87U=",
+      "Fingerprint": "wiu35pfbws",
+      "Integrity": "SJb76u838cgbarEJQvUSZ59Zz78za8rSUdUy2qFblLU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Course\\Lecture\\1- Compiler Revision Theoretical Part.pdf"
-    },
-    {
-      "Identity": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\Week 1 Compiler 2025.pdf",
-      "SourceId": "WebApplication2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\",
-      "BasePath": "_content/WebApplication2",
-      "RelativePath": "uploads/Course/Section/Week 1 Compiler 2025#[.{fingerprint}]?.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "0lcdw46oxc",
-      "Integrity": "DG9mlLie6/XPoFb+ElpU1AUuYT8oC9XNHLZKEIs+zhc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Course\\Section\\Week 1 Compiler 2025.pdf"
-    },
-    {
-      "Identity": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\ML.pdf",
-      "SourceId": "WebApplication2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\",
-      "BasePath": "_content/WebApplication2",
-      "RelativePath": "uploads/ML#[.{fingerprint}]?.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "rijhlejw7e",
-      "Integrity": "7SVfIcpWkAD3dM/dFWIdazrGFabA/UcjDlJ0k/1jpz0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\ML.pdf"
-    },
-    {
-      "Identity": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Screenshot 2025-04-29 024703.png",
-      "SourceId": "WebApplication2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\",
-      "BasePath": "_content/WebApplication2",
-      "RelativePath": "uploads/Screenshot 2025-04-29 024703#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "zu8dezhqz6",
-      "Integrity": "GziywX3jN3huLS7zVCuCtRiqk8ZXY6Vx782r5ww3kkg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2025-04-29 024703.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\Course\\Section\\lec-1.pdf"
     }
   ],
   "Endpoints": [
     {
-      "Route": "uploads/311071780_3187620441487532_502986135333144940_n.b4xus5ugr4.jpg",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\311071780_3187620441487532_502986135333144940_n.jpg",
+      "Route": "uploads/Course/Lecture/683ae493-d762-492e-abaf-c78a2173e6c0.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\683ae493-d762-492e-abaf-c78a2173e6c0.pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -155,171 +92,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "182810"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"K7Pby98qIMQC3DqUouJqn+d3jicopd88llYOKIqObb8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 19:09:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b4xus5ugr4"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/311071780_3187620441487532_502986135333144940_n.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-K7Pby98qIMQC3DqUouJqn+d3jicopd88llYOKIqObb8="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/311071780_3187620441487532_502986135333144940_n.jpg",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\311071780_3187620441487532_502986135333144940_n.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "182810"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"K7Pby98qIMQC3DqUouJqn+d3jicopd88llYOKIqObb8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 19:09:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-K7Pby98qIMQC3DqUouJqn+d3jicopd88llYOKIqObb8="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Course/download.7ltltlkhig.jpg",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\download.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10722"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9UV4v0CLg4ejWBPLS1yBR7XRJwhm8f9mhsDJXwjscOo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 19:50:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7ltltlkhig"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Course/download.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9UV4v0CLg4ejWBPLS1yBR7XRJwhm8f9mhsDJXwjscOo="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Course/download.jpg",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\download.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10722"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9UV4v0CLg4ejWBPLS1yBR7XRJwhm8f9mhsDJXwjscOo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 19:50:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9UV4v0CLg4ejWBPLS1yBR7XRJwhm8f9mhsDJXwjscOo="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Course/Lecture/1- Compiler Revision Theoretical Part.pdf",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\1- Compiler Revision Theoretical Part.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "421784"
+          "Value": "622576"
         },
         {
           "Name": "Content-Type",
@@ -327,11 +100,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IbitEALFj8kzkmMfzJdIidsrm/osTTHGl59zmpwk87U=\""
+          "Value": "\"6h8itWV9BGmPgnLKeXCoAgcFWykcL9xQxiZDlbkoYRw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 19:04:01 GMT"
+          "Value": "Sun, 08 Jun 2025 17:49:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -341,13 +114,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IbitEALFj8kzkmMfzJdIidsrm/osTTHGl59zmpwk87U="
+          "Value": "sha256-6h8itWV9BGmPgnLKeXCoAgcFWykcL9xQxiZDlbkoYRw="
         }
       ]
     },
     {
-      "Route": "uploads/Course/Lecture/1- Compiler Revision Theoretical Part.pe9ehcvd0d.pdf",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\1- Compiler Revision Theoretical Part.pdf",
+      "Route": "uploads/Course/Lecture/683ae493-d762-492e-abaf-c78a2173e6c0.umirtziega.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\683ae493-d762-492e-abaf-c78a2173e6c0.pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -356,7 +129,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "421784"
+          "Value": "622576"
         },
         {
           "Name": "Content-Type",
@@ -364,11 +137,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IbitEALFj8kzkmMfzJdIidsrm/osTTHGl59zmpwk87U=\""
+          "Value": "\"6h8itWV9BGmPgnLKeXCoAgcFWykcL9xQxiZDlbkoYRw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 19:04:01 GMT"
+          "Value": "Sun, 08 Jun 2025 17:49:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -378,21 +151,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pe9ehcvd0d"
+          "Value": "umirtziega"
         },
         {
           "Name": "label",
-          "Value": "uploads/Course/Lecture/1- Compiler Revision Theoretical Part.pdf"
+          "Value": "uploads/Course/Lecture/683ae493-d762-492e-abaf-c78a2173e6c0.pdf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IbitEALFj8kzkmMfzJdIidsrm/osTTHGl59zmpwk87U="
+          "Value": "sha256-6h8itWV9BGmPgnLKeXCoAgcFWykcL9xQxiZDlbkoYRw="
         }
       ]
     },
     {
-      "Route": "uploads/Course/Section/Week 1 Compiler 2025.0lcdw46oxc.pdf",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\Week 1 Compiler 2025.pdf",
+      "Route": "uploads/Course/Lecture/af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -401,7 +174,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "171388"
+          "Value": "961118"
         },
         {
           "Name": "Content-Type",
@@ -409,56 +182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DG9mlLie6/XPoFb+ElpU1AUuYT8oC9XNHLZKEIs+zhc=\""
+          "Value": "\"bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 19:07:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0lcdw46oxc"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Course/Section/Week 1 Compiler 2025.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DG9mlLie6/XPoFb+ElpU1AUuYT8oC9XNHLZKEIs+zhc="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Course/Section/Week 1 Compiler 2025.pdf",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\Week 1 Compiler 2025.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "171388"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DG9mlLie6/XPoFb+ElpU1AUuYT8oC9XNHLZKEIs+zhc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 19:07:05 GMT"
+          "Value": "Sun, 08 Jun 2025 17:49:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -468,13 +196,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DG9mlLie6/XPoFb+ElpU1AUuYT8oC9XNHLZKEIs+zhc="
+          "Value": "sha256-bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo="
         }
       ]
     },
     {
-      "Route": "uploads/ML.pdf",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\ML.pdf",
+      "Route": "uploads/Course/Lecture/af63b2dc-6f27-4b4f-be54-fb8b976fe657.q6e7ca1h4u.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -483,7 +211,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "105140"
+          "Value": "961118"
         },
         {
           "Name": "Content-Type",
@@ -491,11 +219,56 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7SVfIcpWkAD3dM/dFWIdazrGFabA/UcjDlJ0k/1jpz0=\""
+          "Value": "\"bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 20:19:02 GMT"
+          "Value": "Sun, 08 Jun 2025 17:49:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q6e7ca1h4u"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Course/Lecture/af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Course/Section/lec-1.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\lec-1.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1253612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SJb76u838cgbarEJQvUSZ59Zz78za8rSUdUy2qFblLU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 17:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -505,13 +278,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7SVfIcpWkAD3dM/dFWIdazrGFabA/UcjDlJ0k/1jpz0="
+          "Value": "sha256-SJb76u838cgbarEJQvUSZ59Zz78za8rSUdUy2qFblLU="
         }
       ]
     },
     {
-      "Route": "uploads/ML.rijhlejw7e.pdf",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\ML.pdf",
+      "Route": "uploads/Course/Section/lec-1.wiu35pfbws.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\lec-1.pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -520,7 +293,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "105140"
+          "Value": "1253612"
         },
         {
           "Name": "Content-Type",
@@ -528,11 +301,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7SVfIcpWkAD3dM/dFWIdazrGFabA/UcjDlJ0k/1jpz0=\""
+          "Value": "\"SJb76u838cgbarEJQvUSZ59Zz78za8rSUdUy2qFblLU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 20:19:02 GMT"
+          "Value": "Sun, 08 Jun 2025 17:32:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -542,97 +315,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rijhlejw7e"
+          "Value": "wiu35pfbws"
         },
         {
           "Name": "label",
-          "Value": "uploads/ML.pdf"
+          "Value": "uploads/Course/Section/lec-1.pdf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7SVfIcpWkAD3dM/dFWIdazrGFabA/UcjDlJ0k/1jpz0="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Screenshot 2025-04-29 024703.png",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Screenshot 2025-04-29 024703.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "18928"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GziywX3jN3huLS7zVCuCtRiqk8ZXY6Vx782r5ww3kkg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 20:02:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GziywX3jN3huLS7zVCuCtRiqk8ZXY6Vx782r5ww3kkg="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/Screenshot 2025-04-29 024703.zu8dezhqz6.png",
-      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Screenshot 2025-04-29 024703.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "18928"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GziywX3jN3huLS7zVCuCtRiqk8ZXY6Vx782r5ww3kkg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 20:02:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zu8dezhqz6"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/Screenshot 2025-04-29 024703.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-GziywX3jN3huLS7zVCuCtRiqk8ZXY6Vx782r5ww3kkg="
+          "Value": "sha256-SJb76u838cgbarEJQvUSZ59Zz78za8rSUdUy2qFblLU="
         }
       ]
     }

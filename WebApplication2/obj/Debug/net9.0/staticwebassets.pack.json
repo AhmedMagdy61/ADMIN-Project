@@ -1,28 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\311071780_3187620441487532_502986135333144940_n.jpg",
-      "PackagePath": "staticwebassets\\uploads\\311071780_3187620441487532_502986135333144940_n.jpg"
+      "Id": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\683ae493-d762-492e-abaf-c78a2173e6c0.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Course\\Lecture\\683ae493-d762-492e-abaf-c78a2173e6c0.pdf"
     },
     {
-      "Id": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\1- Compiler Revision Theoretical Part.pdf",
-      "PackagePath": "staticwebassets\\uploads\\Course\\Lecture\\1- Compiler Revision Theoretical Part.pdf"
+      "Id": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Lecture\\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Course\\Lecture\\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf"
     },
     {
-      "Id": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\Week 1 Compiler 2025.pdf",
-      "PackagePath": "staticwebassets\\uploads\\Course\\Section\\Week 1 Compiler 2025.pdf"
-    },
-    {
-      "Id": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Course\\download.jpg",
-      "PackagePath": "staticwebassets\\uploads\\Course\\download.jpg"
-    },
-    {
-      "Id": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\ML.pdf",
-      "PackagePath": "staticwebassets\\uploads\\ML.pdf"
-    },
-    {
-      "Id": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\wwwroot\\uploads\\Screenshot 2025-04-29 024703.png",
-      "PackagePath": "staticwebassets\\uploads\\Screenshot 2025-04-29 024703.png"
+      "Id": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\wwwroot\\uploads\\Course\\Section\\lec-1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Course\\Section\\lec-1.pdf"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WebApplication2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

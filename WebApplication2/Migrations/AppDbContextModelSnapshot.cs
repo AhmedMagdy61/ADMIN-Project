@@ -29,11 +29,11 @@ namespace WebApplication2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdminId"));
 
-                    b.Property<string>("Email")
+                    b.Property<string>("AdminPassword")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PasswordHash")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -57,11 +57,11 @@ namespace WebApplication2.Migrations
                     b.Property<int>("AdminId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Photo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("photoLoction")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -86,7 +86,7 @@ namespace WebApplication2.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.Property<string>("LectureLocation")
+                    b.Property<string>("LecturePDF")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -117,7 +117,7 @@ namespace WebApplication2.Migrations
                     b.Property<int>("LectureId")
                         .HasColumnType("int");
 
-                    b.Property<string>("SectionLocation")
+                    b.Property<string>("SectionPDF")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -139,7 +139,7 @@ namespace WebApplication2.Migrations
                     b.HasOne("WebApplication2.Models.Admin", "Admin")
                         .WithMany("Courses")
                         .HasForeignKey("AdminId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Admin");
@@ -150,7 +150,7 @@ namespace WebApplication2.Migrations
                     b.HasOne("WebApplication2.Models.Admin", "Admin")
                         .WithMany("Lectures")
                         .HasForeignKey("AdminId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("WebApplication2.Models.Course", "Course")
@@ -169,7 +169,7 @@ namespace WebApplication2.Migrations
                     b.HasOne("WebApplication2.Models.Admin", "Admin")
                         .WithMany("Sections")
                         .HasForeignKey("AdminId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("WebApplication2.Models.Lecture", "Lecture")

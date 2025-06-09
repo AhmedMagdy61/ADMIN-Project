@@ -12,7 +12,7 @@ namespace WebApplication2.Models
         public int LectureId { get; set; }
         public string Title { get; set; }
 
-        public string LectureLocation { get; set; }
+        public string LecturePDF { get; set; }
         public int CourseId { get; set; }
 
 

@@ -18,7 +18,7 @@ namespace WebApplication2.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    AdminPassword = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -32,6 +32,7 @@ namespace WebApplication2.Migrations
                     CourseId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Photo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AdminId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -42,7 +43,7 @@ namespace WebApplication2.Migrations
                         column: x => x.AdminId,
                         principalTable: "Admins",
                         principalColumn: "AdminId",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -52,8 +53,7 @@ namespace WebApplication2.Migrations
                     LectureId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LectureLocation = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LectureFileName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LecturePDF = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
                     AdminId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -65,13 +65,13 @@ namespace WebApplication2.Migrations
                         column: x => x.AdminId,
                         principalTable: "Admins",
                         principalColumn: "AdminId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Lectures_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "CourseId",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -81,8 +81,7 @@ namespace WebApplication2.Migrations
                     SectionId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SectionLocation = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SectionPDF = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LectureId = table.Column<int>(type: "int", nullable: false),
                     AdminId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -94,13 +93,13 @@ namespace WebApplication2.Migrations
                         column: x => x.AdminId,
                         principalTable: "Admins",
                         principalColumn: "AdminId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Sections_Lectures_LectureId",
                         column: x => x.LectureId,
                         principalTable: "Lectures",
                         principalColumn: "LectureId",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

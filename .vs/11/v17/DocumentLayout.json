@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmed\\source\\repos\\Test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\modelsdtos\\adminreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\adminreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\modelsdtos\\admincreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\admincreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\modelsdtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\modelsdtos\\sectioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\sectioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\modelsdtos\\lecturereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\lecturereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\udatemodelsdtos\\lectureupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\udatemodelsdtos\\lectureupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\test\\webapplication2\\webapplication2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\webapplication2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:53:57.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LectureReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:08:56.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Lecture.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Models\\Lecture.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Lecture.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Models\\Lecture.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Lecture.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:08:45.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CourseDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:08:23.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LectureController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\LectureController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\LectureController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\LectureController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\LectureController.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAUwC0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:39:00.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwGEAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:38:25.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwDwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:37:22.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:32:01.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SectionCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:32:00.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication2\\appsettings.json",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\appsettings.json",
+              "RelativeToolTip": "WebApplication2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-08T16:28:41.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LectureUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "RelativeToolTip": "WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:09:03.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SectionController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\SectionController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\SectionController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Controllers\\SectionController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\SectionController.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAcwLUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:39:14.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAiwLYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:35:43.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\Program.cs",
+              "RelativeToolTip": "WebApplication2\\Program.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T16:28:17.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WebApplication2.csproj",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\WebApplication2.csproj",
+              "RelativeDocumentMoniker": "WebApplication2\\WebApplication2.csproj",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\Test\\WebApplication2\\WebApplication2.csproj",
+              "RelativeToolTip": "WebApplication2\\WebApplication2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-08T16:28:09.353Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

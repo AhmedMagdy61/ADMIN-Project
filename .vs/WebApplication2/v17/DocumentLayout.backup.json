@@ -3,52 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\lecturecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\lecturecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\admincreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\admincreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\migrations\\20250608020549_restrictdeletebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\20250608020549_restrictdeletebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\lecturereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\lecturereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\migrations\\20250608023307_fixrenamecolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\20250608023307_fixrenamecolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\migrations\\20250502164433_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\20250502164433_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\appdb\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\appdb\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\migrations\\20250502190729_updatemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\20250502190729_updatemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\migrations\\20250502191626_update2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\20250502191626_update2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\sectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\sectionreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\sectionreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\coursereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\coursereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\udatemodelsdtos\\lectureupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\udatemodelsdtos\\lectureupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\adminreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\adminreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\lecturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\udatemodelsdtos\\sectionupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\udatemodelsdtos\\sectionupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\lecturereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\lecturereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\udatemodelsdtos\\lectureupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\udatemodelsdtos\\lectureupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\coursereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\coursereaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\adminreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\adminreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\admincreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\admincreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\sectioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\sectioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,36 +79,40 @@
       "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\lecturecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\lecturecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\sectionreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\sectionreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\udatemodelsdtos\\courseupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\udatemodelsdtos\\courseupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\modelsdtos\\sectioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\modelsdtos\\sectioncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\migrations\\20250502164433_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\migrations\\20250502164433_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\authservices\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\authservices\\fileuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|c:\\users\\ahmed\\source\\repos\\webapplication2\\webapplication2\\appdb\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{870E25E2-7230-498A-9D8E-E780A70925C5}|WebApplication2\\WebApplication2.csproj|solutionrelative:webapplication2\\appdb\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,137 +146,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LectureController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\LectureController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\LectureController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\LectureController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\LectureController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAWwEoAAAARAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "20250608023307_FixRenameColumn.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250608023307_FixRenameColumn.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\20250608023307_FixRenameColumn.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250608023307_FixRenameColumn.cs",
+              "RelativeToolTip": "WebApplication2\\Migrations\\20250608023307_FixRenameColumn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:05:13.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T02:34:35.488Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SectionController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\SectionController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\SectionController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\SectionController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\SectionController.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAAAI8AAAAiAAAAAAAAAA==",
+              "Title": "20250502164433_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
+              "RelativeToolTip": "WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwGYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:05:35.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T16:45:01.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LectureReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
-              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "WebApplication2\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAmwJ4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:31:54.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T01:58:22.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250608020549_RestrictDeleteBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250608020549_RestrictDeleteBehavior.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\20250608020549_RestrictDeleteBehavior.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250608020549_RestrictDeleteBehavior.cs",
+              "RelativeToolTip": "WebApplication2\\Migrations\\20250608020549_RestrictDeleteBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T02:24:53.581Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LectureCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
-              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs*",
+              "RelativeToolTip": "WebApplication2\\Program.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:31:11.842Z",
+              "WhenOpened": "2025-05-02T04:07:32.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "20250502190729_Updatemigration.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502190729_Updatemigration.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\20250502190729_Updatemigration.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502190729_Updatemigration.cs",
+              "RelativeToolTip": "WebApplication2\\Migrations\\20250502190729_Updatemigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T02:24:48.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250502191626_update2.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502191626_update2.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\20250502191626_update2.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502191626_update2.cs",
+              "RelativeToolTip": "WebApplication2\\Migrations\\20250502191626_update2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T02:24:50.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\AppDb\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\AppDb\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\AppDb\\AppDbContext.cs",
+              "RelativeToolTip": "WebApplication2\\AppDb\\AppDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:02:11.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SectionController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\SectionController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\SectionController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\SectionController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\SectionController.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAewLUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:05:35.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LectureController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\LectureController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\LectureController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\LectureController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\LectureController.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAYwMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:05:13.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LectureReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\LectureReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:31:54.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LectureUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "RelativeToolTip": "WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:23:02.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "CourseReadDto.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\CourseReadDto.cs",
               "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\CourseReadDto.cs",
               "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\CourseReadDto.cs",
               "RelativeToolTip": "WebApplication2\\ModelsDTOs\\CourseReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T17:10:39.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T17:10:39.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SectionReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
-              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:34:55.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
-              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:27:21.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Lecture.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Lecture.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Lecture.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Lecture.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Lecture.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAywBgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:01:18.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LectureUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs*",
-              "RelativeToolTip": "WebApplication2\\UdateModelsDTOs\\LectureUpdateDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T19:23:02.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "AdminReadDto.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
               "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
               "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
               "RelativeToolTip": "WebApplication2\\ModelsDTOs\\AdminReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:27:45.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T06:27:45.876Z"
             },
             {
               "$type": "Document",
@@ -266,137 +325,109 @@
               "RelativeDocumentMoniker": "WebApplication2\\UdateModelsDTOs\\SectionUpdateDto.cs",
               "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\SectionUpdateDto.cs",
               "RelativeToolTip": "WebApplication2\\UdateModelsDTOs\\SectionUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T19:24:42.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Section.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Section.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Section.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Section.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Section.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:01:32.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\CourseController.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAuwIEAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:03:49.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "WebApplication2\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:04:46.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Course.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Course.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Course.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:00:59.74Z"
+              "WhenOpened": "2025-05-02T19:24:42.056Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "CourseUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
-              "RelativeToolTip": "WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Title": "AdminCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\AdminCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T19:23:49.706Z"
+              "WhenOpened": "2025-05-02T06:27:21.938Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "CourseDto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\CourseDto.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\CourseDto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\CourseDto.cs",
-              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\CourseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:22:58.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Admin.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Admin.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Admin.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:00:44.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "SectionCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
               "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
               "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
               "RelativeToolTip": "WebApplication2\\ModelsDTOs\\SectionCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T06:34:40.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Program.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Program.cs",
-              "RelativeToolTip": "WebApplication2\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADsAAABXAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:07:32.278Z"
+              "WhenOpened": "2025-05-02T04:03:49.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:04:46.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CourseDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\CourseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:22:58.357Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "20250502164433_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
-              "RelativeToolTip": "WebApplication2\\Migrations\\20250502164433_InitialCreate.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAQwGYAAAA8AAAAAAAAAA==",
+              "Title": "LectureCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\LectureCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T16:45:01.731Z"
+              "WhenOpened": "2025-05-02T06:31:11.842Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "SectionReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
+              "RelativeToolTip": "WebApplication2\\ModelsDTOs\\SectionReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:34:55.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CourseUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
+              "RelativeToolTip": "WebApplication2\\UdateModelsDTOs\\CourseUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:23:49.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication2\\appsettings.json",
@@ -408,7 +439,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
+              "Title": "Section.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Section.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Section.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Section.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Section.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:01:32.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Lecture.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Lecture.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Lecture.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Lecture.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Lecture.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:01:18.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Course.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Course.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:00:59.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\Models\\Admin.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Admin.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:00:44.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "FileUploadOperationFilter.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\FileUploadOperationFilter.cs",
               "RelativeDocumentMoniker": "WebApplication2\\FileUploadOperationFilter.cs",
@@ -420,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "WebApplication2.csproj",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
               "RelativeDocumentMoniker": "WebApplication2\\WebApplication2.csproj",
@@ -432,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "WebApplication2.http",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.http",
               "RelativeDocumentMoniker": "WebApplication2\\WebApplication2.http",
@@ -444,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "WebApplication2.csproj.Backup.tmp",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.csproj.Backup.tmp",
               "RelativeDocumentMoniker": "WebApplication2\\WebApplication2.csproj.Backup.tmp",
@@ -456,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\AuthServices\\TokenService.cs",
               "RelativeDocumentMoniker": "WebApplication2\\AuthServices\\TokenService.cs",
@@ -468,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "FileUploadService.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\AuthServices\\FileUploadService.cs",
               "RelativeDocumentMoniker": "WebApplication2\\AuthServices\\FileUploadService.cs",
@@ -477,18 +556,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T04:12:05.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\AppDb\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\AppDb\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\WebApplication2\\WebApplication2\\AppDb\\AppDbContext.cs",
-              "RelativeToolTip": "WebApplication2\\AppDb\\AppDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T04:02:11.138Z"
             }
           ]
         }

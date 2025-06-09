@@ -3,7 +3,7 @@
     public class SectionUpdateDto
     {
         public string? Title { get; set; }
-        public IFormFile? SectionLocation { get; set; }  // يمكن التعامل مع الملف هنا بشكل خاص عند رفعه
+        public IFormFile? SectionPDF { get; set; } 
         public int? LectureId { get; set; }
         public int? AdminId { get; set; }
     }

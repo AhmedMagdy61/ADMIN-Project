@@ -23,17 +23,20 @@ namespace WebApplication2.AppDb
             modelBuilder.Entity<Admin>()
                 .HasMany(a => a.Courses)
                 .WithOne(c => c.Admin)
-                .HasForeignKey(c => c.AdminId);
+                .HasForeignKey(c => c.AdminId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Admin>()
                 .HasMany(a => a.Lectures)
                 .WithOne(l => l.Admin)
-                .HasForeignKey(l => l.AdminId);
+                .HasForeignKey(l => l.AdminId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Admin>()
                 .HasMany(a => a.Sections)
                 .WithOne(s => s.Admin)
-                .HasForeignKey(s => s.AdminId);
+                .HasForeignKey(s => s.AdminId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 

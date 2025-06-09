@@ -5,6 +5,7 @@ using WebApplication2.AuthServices;
 using WebApplication2.Models;
 using WebApplication2.ModelsDTOs;
 using WebApplication2.UdateModelsDTOs;
+using static System.Collections.Specialized.BitVector32;
 
 namespace WebApplication2.Controllers
 {
@@ -28,26 +29,21 @@ namespace WebApplication2.Controllers
         public async Task<ActionResult<IEnumerable<Lecture>>> GetLectures()
         {
             //.Include(c => c.Course)
-            var lectures = await _context.Lectures.Include(s => s.Sections)
+            var lectures = await _context.Lectures.Include(l => l.Sections)
                 .Include(l => l.Course)
                 .Select(l => new LectureReadDto
                 {
                     LectureId = l.LectureId,
                     Title = l.Title,
-                    LectureLoction = l.LectureLocation,
+                    LecturePDF = l.LecturePDF,
                     CourseId = l.CourseId,
-                    AdminId = l.AdminId,
+                    TitleCourse = l.Course.Title,
+                    AdminId = l.AdminId
+                    
 
-                    Course = new CourseReadDto
-                    {
-                        CourseId = l.Course.CourseId,
-                        Title = l.Course.Title
-                        
-                    },
-                    
-                    
                 })
         .ToListAsync();
+        
             return Ok(lectures);
         }
 
@@ -67,15 +63,10 @@ namespace WebApplication2.Controllers
             {
                 LectureId = lecture.LectureId,
                 Title = lecture.Title,
-                LectureLoction = lecture.LectureLocation,
+                LecturePDF = lecture.LecturePDF,
                 CourseId = lecture.CourseId,
                 AdminId = lecture.AdminId,
-                Course = new CourseReadDto
-                {
-                    CourseId = lecture.Course.CourseId,
-                    Title = lecture.Course.Title
-
-                }
+                TitleCourse = lecture.Course.Title
 
             };
             
@@ -104,7 +95,7 @@ namespace WebApplication2.Controllers
                 return BadRequest("Course not found.");
             }
 
-            if (dto.LectureLocation == null)
+            if (dto.LecturePDF == null)
             {
                 return BadRequest("No file uploaded.");
             }
@@ -114,19 +105,19 @@ namespace WebApplication2.Controllers
             {
                 Directory.CreateDirectory(uploadPath);
             }
-            var filePath = Path.Combine(uploadPath, dto.LectureLocation.FileName);
+            var filePath = Path.Combine(uploadPath, dto.LecturePDF.FileName);
             try
             {
                 Console.WriteLine("filePath: " + filePath);
-                Console.WriteLine("LectureLocation.FileName: " + dto.LectureLocation.FileName);
+                Console.WriteLine("LectureLocation.FileName: " + dto.LecturePDF.FileName);
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    await dto.LectureLocation.CopyToAsync(stream);
+                    await dto.LecturePDF.CopyToAsync(stream);
                 }
                 var lecture = new Lecture
                 {
                     Title = dto.Title,
-                    LectureLocation = dto.LectureLocation.FileName, // full physical path
+                    LecturePDF = dto.LecturePDF.FileName, // full physical path
                     CourseId = dto.CourseId,
                     AdminId = dto.AdminId
                 };
@@ -144,89 +135,107 @@ namespace WebApplication2.Controllers
         [HttpPost("update/{LectureId}")]
         public async Task<IActionResult> UpdateLecture(int LectureId, [FromForm] LectureUpdateDto dto)
         {
-            var lectureExists = await _context.Lectures
-            .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower());
-
-            if (lectureExists)
-            {
-                return BadRequest("A Lecture with the same name already exists.");
-            }
-
-            var adminExists = await _context.Admins.AnyAsync(a => a.AdminId == dto.AdminId);
-            if (!adminExists)
-            {
-                return BadRequest("Admin not found.");
-            }
-            var courseExists = await _context.Courses.AnyAsync(c => c.CourseId == dto.CourseId);
-            if (!courseExists)
-            {
-                return BadRequest("Course not found.");
-            }
             var lecture = await _context.Lectures.FindAsync(LectureId);
             if (lecture == null)
             {
                 return NotFound("Lecture not found.");
             }
-
-            // تحديث البيانات الأساسية
-            lecture.Title = dto.Title;
-            lecture.CourseId = dto.CourseId;
-            lecture.AdminId = dto.AdminId;
-
-            // تحديث الملف لو تم إرساله
-            if (dto.LectureLocation != null)
+            if (!string.IsNullOrWhiteSpace(dto.Title))
             {
+                var lectureExists = await _context.Lectures
+                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.LectureId != LectureId);
+                if (lectureExists)
+                {
+                    return BadRequest("A Lecture with the same name already exists.");
+                }
+
+                lecture.Title = dto.Title;
+            }
+   
+            if (dto.AdminId.HasValue)
+            {
+                var adminExists = await _context.Admins.AnyAsync(a => a.AdminId == dto.AdminId);
+                if (!adminExists)
+                {
+                    return BadRequest("Admin not found.");
+                }
+                lecture.AdminId = dto.AdminId.Value;
+            }
+            if (dto.CourseId.HasValue)
+            {
+                var courseExists = await _context.Courses.AnyAsync(c => c.CourseId == dto.CourseId);
+                if (!courseExists)
+                {
+                    return BadRequest("Course not found.");
+                }
+                lecture.CourseId = dto.CourseId.Value;
+            }
+           
+            // تحديث الملف لو تم إرساله
+            if (dto.LecturePDF != null)
+            {
+                var oldFileName = lecture.LecturePDF;
+
+                if (!string.IsNullOrEmpty(oldFileName))
+                {
+                    var isFileUsedElsewhere = await _context.Lectures
+                    .AnyAsync(s => s.LectureId != lecture.LectureId && s.LecturePDF == oldFileName);
+                    if (!isFileUsedElsewhere)
+                    {
+                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Lecture", oldFileName);
+                        if (System.IO.File.Exists(oldPath))
+                        {
+                            System.IO.File.Delete(oldPath);
+                        }
+                    }
+                }
                 var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Lecture");
 
                 if (!Directory.Exists(uploadPath))
                 {
                     Directory.CreateDirectory(uploadPath);
                 }
-
-                var filePath = Path.Combine(uploadPath, dto.LectureLocation.FileName);
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.LecturePDF.FileName);
+                var newPath = Path.Combine(uploadPath, uniqueFileName);
+                using (var stream = new FileStream(newPath, FileMode.Create))
                 {
-                    await dto.LectureLocation.CopyToAsync(stream);
+                    await dto.LecturePDF.CopyToAsync(stream);
                 }
 
-                lecture.LectureLocation = dto.LectureLocation.FileName;
+                lecture.LecturePDF = uniqueFileName;
             }
 
             await _context.SaveChangesAsync();
             return Ok(lecture);
         }
-        //if (ModelState.IsValid)
-        //{
-        //    // حفظ الملف
-        //    if (dto.LectureLocation != null)
-        //    {
-        //        var filePath = Path.Combine("wwwroot/uploads", dto.LectureLocation.FileName);
-
-        //        using (var stream = new FileStream(filePath, FileMode.Create))
-        //        {
-        //            await lecture.LectureLocation.CopyToAsync(stream);
-        //        }
-
-        //        lecture.LectureFileName = filePath;
-        //    }
-
-        //    _context.Lectures.Add(lecture);
-        //    await _context.SaveChangesAsync();
-
-        //    return Ok(lecture);
-        //}
-        //    return BadRequest(ModelState);
-        //}
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteLecture(int id)
         {
             var lecture = await _context.Lectures.FindAsync(id);
             if (lecture == null)
-                return NotFound();
+                return NotFound(new { message = "Lecture not found." });
 
-            _context.Lectures.Remove(lecture);
-            await _context.SaveChangesAsync();
-            return NoContent();
+            if (!string.IsNullOrEmpty(lecture.LecturePDF))
+            {
+                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Lecture", lecture.LecturePDF);
+                if (System.IO.File.Exists(oldPath))
+                {
+                    System.IO.File.Delete(oldPath);
+                }
+            }
+            try
+            {
+                _context.Lectures.Remove(lecture);
+                await _context.SaveChangesAsync();
+                return Content("The lecture was deleted with its section.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+
         }
     }
 

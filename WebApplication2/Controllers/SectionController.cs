@@ -1,6 +1,8 @@
 ﻿using Humanizer;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
 using WebApplication2.AppDb;
 using WebApplication2.AuthServices;
 using WebApplication2.Models;
@@ -42,7 +44,7 @@ namespace WebApplication2.Controllers
                 Title = section.Title,
                 LectureId = section.LectureId,
                 AdminId = section.AdminId,
-                SectionLocation = section.SectionLocation
+                SectionPDF = section.SectionPDF
 
             };
             return Ok(dto);
@@ -79,18 +81,18 @@ namespace WebApplication2.Controllers
             {
                 Directory.CreateDirectory(uploadPath);
             }
-            var filePath = Path.Combine(uploadPath, dto.SectionLocation.FileName);
+            var filePath = Path.Combine(uploadPath, dto.SectionPDF.FileName);
 
             try
             {
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    await dto.SectionLocation.CopyToAsync(stream);
+                    await dto.SectionPDF.CopyToAsync(stream);
                 }
                 var section = new Section
                 {
                     Title = dto.Title,
-                    SectionLocation = dto.SectionLocation.FileName,
+                    SectionPDF = dto.SectionPDF.FileName,
                     LectureId = dto.LectureId,
                     AdminId = dto.AdminId
                 };
@@ -105,29 +107,6 @@ namespace WebApplication2.Controllers
             }
         }
 
-        //    if (ModelState.IsValid)
-        //    {
-        //        // حفظ الملف
-        //        if (dto.Location != null)
-        //        {
-        //            var filePath = Path.Combine("wwwroot/uploads", dto.Location.FileName);
-
-        //            using (var stream = new FileStream(filePath, FileMode.Create))
-        //            {
-        //                await section.Location.CopyToAsync(stream);
-        //            }
-
-        //            section.FileName = filePath;
-        //        }
-
-        //        _context.Sections.Add(section);
-        //        await _context.SaveChangesAsync();
-
-        //        return Ok(section);
-        //    }
-
-        //    return BadRequest(ModelState);
-        //}
         [HttpPost("update/{SectionID}")]
         public async Task<IActionResult> UpdateSection(int SectionID, [FromForm] SectionUpdateDto dto)
         {
@@ -170,22 +149,44 @@ namespace WebApplication2.Controllers
             }
 
             // تحديث الملف لو تم إرساله
-            if (dto.SectionLocation != null)
+            if (dto.SectionPDF != null)
             {
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section");
+                // اسم الملف القديم
+                var oldFileName = section.SectionPDF;
 
+                // ✅ تأكد إن الملف القديم مش مستخدم في Section تانية
+                if (!string.IsNullOrEmpty(oldFileName))
+                {
+                    var isFileUsedElsewhere = await _context.Sections
+                        .AnyAsync(s => s.SectionId != section.SectionId && s.SectionPDF == oldFileName);
+
+                    if (!isFileUsedElsewhere)
+                    {
+                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section", oldFileName);
+                        if (System.IO.File.Exists(oldPath))
+                        {
+                            System.IO.File.Delete(oldPath);
+                        }
+                    }
+                }
+
+                // ✅ إنشاء مسار التخزين
+                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section");
                 if (!Directory.Exists(uploadPath))
                 {
                     Directory.CreateDirectory(uploadPath);
                 }
 
-                var filePath = Path.Combine(uploadPath, dto.SectionLocation.FileName);
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                // ✅ اسم فريد للملف الجديد
+                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.SectionPDF.FileName);
+                var newPath = Path.Combine(uploadPath, uniqueFileName);
+
+                using (var stream = new FileStream(newPath, FileMode.Create))
                 {
-                    await dto.SectionLocation.CopyToAsync(stream);
+                    await dto.SectionPDF.CopyToAsync(stream);
                 }
 
-                section.SectionLocation = dto.SectionLocation.FileName;
+                section.SectionPDF = uniqueFileName;
             }
 
             await _context.SaveChangesAsync();
@@ -197,11 +198,29 @@ namespace WebApplication2.Controllers
         {
             var section = await _context.Sections.FindAsync(id);
             if (section == null)
-                return NotFound();
+                return NotFound(new { message = "Section not found." });
 
-            _context.Sections.Remove(section);
-            await _context.SaveChangesAsync();
-            return NoContent();
+
+            if (!string.IsNullOrEmpty(section.SectionPDF))
+            {
+                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section",
+                                            section.SectionPDF);
+                if (System.IO.File.Exists(oldPath))
+                {
+                    System.IO.File.Delete(oldPath);
+                }
+            }
+            try
+            {
+                _context.Sections.Remove(section);
+                await _context.SaveChangesAsync();
+                return Content("The section was deleted.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+           
         }
     }
 

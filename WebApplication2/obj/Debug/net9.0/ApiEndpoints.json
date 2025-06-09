@@ -1,23 +1,5 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
-    "RelativePath": "",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "WebApplication2.Controllers.AdminController",
     "Method": "GetAdmins",
     "RelativePath": "api/Admin",
@@ -27,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication2.Models.Admin, WebApplication2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication2.ModelsDTOs.AdminReadDto, WebApplication2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -51,7 +33,7 @@
         "IsRequired": false
       },
       {
-        "Name": "PasswordHash",
+        "Name": "Password",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -154,7 +136,7 @@
         "IsRequired": false
       },
       {
-        "Name": "photoLoction",
+        "Name": "Photo",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
@@ -233,11 +215,11 @@
       },
       {
         "Name": "AdminId",
-        "Type": "System.Int32",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
-        "Name": "photoLoction",
+        "Name": "Photo",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
@@ -278,7 +260,7 @@
         "IsRequired": false
       },
       {
-        "Name": "LectureLocation",
+        "Name": "LecturePDF",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },
@@ -356,18 +338,18 @@
         "IsRequired": false
       },
       {
-        "Name": "LectureLocation",
+        "Name": "LecturePDF",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },
       {
         "Name": "CourseId",
-        "Type": "System.Int32",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
         "Name": "AdminId",
-        "Type": "System.Int32",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -407,7 +389,7 @@
         "IsRequired": false
       },
       {
-        "Name": "SectionLocation",
+        "Name": "SectionPDF",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },
@@ -485,7 +467,7 @@
         "IsRequired": false
       },
       {
-        "Name": "SectionLocation",
+        "Name": "SectionPDF",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },

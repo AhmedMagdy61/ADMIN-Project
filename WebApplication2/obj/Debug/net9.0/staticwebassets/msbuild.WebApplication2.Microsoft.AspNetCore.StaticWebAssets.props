@@ -1,112 +1,58 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\311071780_3187620441487532_502986135333144940_n.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Lecture\683ae493-d762-492e-abaf-c78a2173e6c0.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication2</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/WebApplication2</BasePath>
-      <RelativePath>uploads/311071780_3187620441487532_502986135333144940_n.jpg</RelativePath>
+      <RelativePath>uploads/Course/Lecture/683ae493-d762-492e-abaf-c78a2173e6c0.pdf</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b4xus5ugr4</Fingerprint>
-      <Integrity>K7Pby98qIMQC3DqUouJqn+d3jicopd88llYOKIqObb8=</Integrity>
+      <Fingerprint>umirtziega</Fingerprint>
+      <Integrity>6h8itWV9BGmPgnLKeXCoAgcFWykcL9xQxiZDlbkoYRw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\311071780_3187620441487532_502986135333144940_n.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Lecture\683ae493-d762-492e-abaf-c78a2173e6c0.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\download.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Lecture\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication2</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/WebApplication2</BasePath>
-      <RelativePath>uploads/Course/download.jpg</RelativePath>
+      <RelativePath>uploads/Course/Lecture/af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7ltltlkhig</Fingerprint>
-      <Integrity>9UV4v0CLg4ejWBPLS1yBR7XRJwhm8f9mhsDJXwjscOo=</Integrity>
+      <Fingerprint>q6e7ca1h4u</Fingerprint>
+      <Integrity>bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\download.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Lecture\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Lecture\1- Compiler Revision Theoretical Part.pdf'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Section\lec-1.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>WebApplication2</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/WebApplication2</BasePath>
-      <RelativePath>uploads/Course/Lecture/1- Compiler Revision Theoretical Part.pdf</RelativePath>
+      <RelativePath>uploads/Course/Section/lec-1.pdf</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pe9ehcvd0d</Fingerprint>
-      <Integrity>IbitEALFj8kzkmMfzJdIidsrm/osTTHGl59zmpwk87U=</Integrity>
+      <Fingerprint>wiu35pfbws</Fingerprint>
+      <Integrity>SJb76u838cgbarEJQvUSZ59Zz78za8rSUdUy2qFblLU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Lecture\1- Compiler Revision Theoretical Part.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Section\Week 1 Compiler 2025.pdf'))">
-      <SourceType>Package</SourceType>
-      <SourceId>WebApplication2</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/WebApplication2</BasePath>
-      <RelativePath>uploads/Course/Section/Week 1 Compiler 2025.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0lcdw46oxc</Fingerprint>
-      <Integrity>DG9mlLie6/XPoFb+ElpU1AUuYT8oC9XNHLZKEIs+zhc=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Section\Week 1 Compiler 2025.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ML.pdf'))">
-      <SourceType>Package</SourceType>
-      <SourceId>WebApplication2</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/WebApplication2</BasePath>
-      <RelativePath>uploads/ML.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rijhlejw7e</Fingerprint>
-      <Integrity>7SVfIcpWkAD3dM/dFWIdazrGFabA/UcjDlJ0k/1jpz0=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ML.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Screenshot 2025-04-29 024703.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>WebApplication2</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/WebApplication2</BasePath>
-      <RelativePath>uploads/Screenshot 2025-04-29 024703.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zu8dezhqz6</Fingerprint>
-      <Integrity>GziywX3jN3huLS7zVCuCtRiqk8ZXY6Vx782r5ww3kkg=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Screenshot 2025-04-29 024703.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\Course\Section\lec-1.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

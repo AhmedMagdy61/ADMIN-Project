@@ -73,10 +73,8 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Course Management API V1");
 });
-app.MapGet("/", () => "Hello World!");
 
 // Map controllers
 app.MapControllers();
 app.Run();
 
-// Run the app

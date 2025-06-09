@@ -10,6 +10,7 @@ namespace WebApplication2.Controllers
     using WebApplication2.Models;
     using WebApplication2.ModelsDTOs;
     using WebApplication2.UdateModelsDTOs;
+    using static System.Collections.Specialized.BitVector32;
 
     [ApiController]
     [Route("api/[controller]")]
@@ -61,7 +62,7 @@ namespace WebApplication2.Controllers
                 return BadRequest("A course with the same name already exists.");
             }
 
-            if (dto.photoLoction == null)
+            if (dto.Photo == null)
             {
                 return BadRequest("No file uploaded.");
             }
@@ -72,27 +73,32 @@ namespace WebApplication2.Controllers
             {
                 Directory.CreateDirectory(uploadPath);
             }
-            var filePath = Path.Combine(uploadPath, dto.photoLoction.FileName);
+            var filePath = Path.Combine(uploadPath, dto.Photo.FileName);
             try
             {
                 Console.WriteLine("filePath: " + filePath);
-                Console.WriteLine("PhotoLocation.FileName: " + dto.photoLoction.FileName);
+                Console.WriteLine("PhotoLocation.FileName: " + dto.Photo.FileName);
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    await dto.photoLoction.CopyToAsync(stream);
+                    await dto.Photo.CopyToAsync(stream);
                 }
 
                 var course = new Course
-            {
-                Title = dto.Title,
-                AdminId = dto.AdminId,
-                photoLoction = dto.photoLoction.FileName
+                {
+                    Title = dto.Title,
+                    AdminId = dto.AdminId,
+                    Photo = dto.Photo.FileName,
+                    Lectures = new List<Lecture>()
+                };
                 
-            };
-            _context.Courses.Add(course);
+                _context.Courses.Add(course);
             await _context.SaveChangesAsync();
+            var courseWithLectures = await _context.Courses
+                    .Include(c => c.Lectures)
+                    .FirstOrDefaultAsync(c => c.CourseId == course.CourseId);
 
-            return Ok(course);
+
+                return Ok(courseWithLectures);
             }
             catch (Exception ex)
             {
@@ -102,49 +108,73 @@ namespace WebApplication2.Controllers
         [HttpPost("update/{CourseID}")]
         public async Task<IActionResult> UpdateSection(int CourseID, [FromForm] CourseUpdateDto dto)
         {
-            var adminExists = await _context.Admins.AnyAsync(a => a.AdminId == dto.AdminId);
-            if (!adminExists)
-            {
-                return BadRequest("Admin not found.");
-            }
-      
             var course = await _context.Courses.FindAsync(CourseID);
+           
             if (course == null)
             {
                 return NotFound("Course not found.");
             }
-            var courseExists = await _context.Courses
-            .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower());
-
-            if (courseExists)
+            if (dto.AdminId.HasValue)
             {
-                return BadRequest("A course with the same name already exists.");
+                var adminExists = await _context.Admins.AnyAsync(a => a.AdminId == dto.AdminId);
+                if (!adminExists)
+                {
+                    return BadRequest("Admin not found.");
+                }
+                course.AdminId = dto.AdminId.Value;
             }
-            // تحديث البيانات الأساسية
-            course.Title = dto.Title;
-            course.AdminId = dto.AdminId;
 
-            // تحديث الملف لو تم إرساله
-            if (dto.photoLoction != null)
+            if (!string.IsNullOrWhiteSpace(dto.Title))
             {
+                var courseExists = await _context.Courses
+                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.CourseId != CourseID);
+
+                if (courseExists)
+                {
+                    return BadRequest("A course with the same name already exists.");
+                }
+
+                course.Title = dto.Title;
+            }
+          
+            if (dto.Photo != null)
+            {
+                var oldFileName = course.Photo;
+                if (!string.IsNullOrEmpty(course.Photo))
+                {
+                    var isFileUsedElsewhere = await _context.Courses
+                                      .AnyAsync(s => s.CourseId != course.CourseId && s.Photo == oldFileName);
+                    if (!isFileUsedElsewhere)
+                    {
+                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course", oldFileName);
+                        if (System.IO.File.Exists(oldPath))
+                        {
+                            System.IO.File.Delete(oldPath);
+                        }
+                    }
+                }
+
                 var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course");
 
                 if (!Directory.Exists(uploadPath))
                 {
                     Directory.CreateDirectory(uploadPath);
                 }
-
-                var filePath = Path.Combine(uploadPath, dto.photoLoction.FileName);
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.Photo.FileName);
+                var newPath = Path.Combine(uploadPath, uniqueFileName);
+                using (var stream = new FileStream(newPath, FileMode.Create))
                 {
-                    await dto.photoLoction.CopyToAsync(stream);
+                    await dto.Photo.CopyToAsync(stream);
                 }
 
-                course.photoLoction = dto.photoLoction.FileName;
+                course.Photo = uniqueFileName;
             }
 
             await _context.SaveChangesAsync();
-            return Ok(course);
+            var courseWithLectures = await _context.Courses
+                  .Include(c => c.Lectures).ThenInclude(s=> s.Sections)
+                  .FirstOrDefaultAsync(c => c.CourseId == CourseID);
+            return Ok(courseWithLectures);
         }
 
         // DELETE: api/Course/5
@@ -153,12 +183,26 @@ namespace WebApplication2.Controllers
         {
             var course = await _context.Courses.FindAsync(id);
             if (course == null)
-                return NotFound();
+                return NotFound(new { message = "Course not found." });
+            if (!string.IsNullOrEmpty(course.Photo))
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course", course.Photo);
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+            }
 
-            _context.Courses.Remove(course);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            try
+            {
+                _context.Courses.Remove(course);
+                await _context.SaveChangesAsync();
+                return Content("The Course was deleted with its Lectures and Sections.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 

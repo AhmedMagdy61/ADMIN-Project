@@ -14,7 +14,7 @@ namespace WebApplication2.Models
         [Required(ErrorMessage = "EmailAddress Required")]
         [EmailAddress(ErrorMessage = "Enter Correct Email")]
         public string Email { get; set; } 
-        public string PasswordHash { get; set; }
+        public string AdminPassword { get; set; }
 
         public ICollection<Course>? Courses { get; set; }
         public ICollection<Lecture>? Lectures { get; set; }

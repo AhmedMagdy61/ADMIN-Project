@@ -8,7 +8,7 @@ namespace WebApplication2.ModelsDTOs
         public string Title { get; set; }
         [Required(ErrorMessage = "Lecture Loction is required.")]
 
-        public IFormFile LectureLocation { get; set; } // يمكن تتعامل مع الـ file بشكل خاص عند رفعه
+        public IFormFile LecturePDF { get; set; } 
         [Required(ErrorMessage = "Course ID is required.")]
         public int CourseId { get; set; }
         [Required(ErrorMessage = "Admin ID is required.")]

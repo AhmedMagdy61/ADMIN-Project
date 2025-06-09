@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Admin"
+                    "$ref": "#/components/schemas/AdminReadDto"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Admin"
+                    "$ref": "#/components/schemas/AdminReadDto"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Admin"
+                    "$ref": "#/components/schemas/AdminReadDto"
                   }
                 }
               }
@@ -51,14 +51,16 @@
             "multipart/form-data": {
               "schema": {
                 "required": [
-                  "Email"
+                  "Email",
+                  "Password",
+                  "Username"
                 ],
                 "type": "object",
                 "properties": {
                   "Username": {
                     "type": "string"
                   },
-                  "PasswordHash": {
+                  "Password": {
                     "type": "string"
                   },
                   "Email": {
@@ -71,7 +73,7 @@
                 "Username": {
                   "style": "form"
                 },
-                "PasswordHash": {
+                "Password": {
                   "style": "form"
                 },
                 "Email": {
@@ -211,6 +213,11 @@
           "content": {
             "multipart/form-data": {
               "schema": {
+                "required": [
+                  "AdminId",
+                  "Photo",
+                  "Title"
+                ],
                 "type": "object",
                 "properties": {
                   "Title": {
@@ -220,7 +227,7 @@
                     "type": "integer",
                     "format": "int32"
                   },
-                  "photoLoction": {
+                  "Photo": {
                     "type": "string",
                     "format": "binary"
                   }
@@ -233,7 +240,7 @@
                 "AdminId": {
                   "style": "form"
                 },
-                "photoLoction": {
+                "Photo": {
                   "style": "form"
                 }
               }
@@ -354,7 +361,7 @@
                     "type": "integer",
                     "format": "int32"
                   },
-                  "photoLoction": {
+                  "Photo": {
                     "type": "string",
                     "format": "binary"
                   }
@@ -367,7 +374,7 @@
                 "AdminId": {
                   "style": "form"
                 },
-                "photoLoction": {
+                "Photo": {
                   "style": "form"
                 }
               }
@@ -429,7 +436,7 @@
                 "required": [
                   "AdminId",
                   "CourseId",
-                  "LectureLocation",
+                  "LecturePDF",
                   "Title"
                 ],
                 "type": "object",
@@ -437,7 +444,7 @@
                   "Title": {
                     "type": "string"
                   },
-                  "LectureLocation": {
+                  "LecturePDF": {
                     "type": "string",
                     "format": "binary"
                   },
@@ -455,7 +462,7 @@
                 "Title": {
                   "style": "form"
                 },
-                "LectureLocation": {
+                "LecturePDF": {
                   "style": "form"
                 },
                 "CourseId": {
@@ -561,7 +568,7 @@
                   "Title": {
                     "type": "string"
                   },
-                  "LectureLocation": {
+                  "LecturePDF": {
                     "type": "string",
                     "format": "binary"
                   },
@@ -579,7 +586,7 @@
                 "Title": {
                   "style": "form"
                 },
-                "LectureLocation": {
+                "LecturePDF": {
                   "style": "form"
                 },
                 "CourseId": {
@@ -644,12 +651,18 @@
           "content": {
             "multipart/form-data": {
               "schema": {
+                "required": [
+                  "AdminId",
+                  "LectureId",
+                  "SectionPDF",
+                  "Title"
+                ],
                 "type": "object",
                 "properties": {
                   "Title": {
                     "type": "string"
                   },
-                  "SectionLocation": {
+                  "SectionPDF": {
                     "type": "string",
                     "format": "binary"
                   },
@@ -667,7 +680,7 @@
                 "Title": {
                   "style": "form"
                 },
-                "SectionLocation": {
+                "SectionPDF": {
                   "style": "form"
                 },
                 "LectureId": {
@@ -773,7 +786,7 @@
                   "Title": {
                     "type": "string"
                   },
-                  "SectionLocation": {
+                  "SectionPDF": {
                     "type": "string",
                     "format": "binary"
                   },
@@ -791,7 +804,7 @@
                 "Title": {
                   "style": "form"
                 },
-                "SectionLocation": {
+                "SectionPDF": {
                   "style": "form"
                 },
                 "LectureId": {
@@ -807,25 +820,6 @@
         "responses": {
           "200": {
             "description": "Success"
-          }
-        }
-      }
-    },
-    "/": {
-      "get": {
-        "tags": [
-          "WebApplication2"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       }
@@ -851,7 +845,7 @@
             "type": "string",
             "format": "email"
           },
-          "passwordHash": {
+          "adminPassword": {
             "type": "string",
             "nullable": true
           },
@@ -893,6 +887,10 @@
           "email": {
             "type": "string",
             "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -908,7 +906,7 @@
             "type": "string",
             "nullable": true
           },
-          "photoLoction": {
+          "photo": {
             "type": "string",
             "nullable": true
           },
@@ -926,24 +924,6 @@
         },
         "additionalProperties": false
       },
-      "CourseReadDto": {
-        "type": "object",
-        "properties": {
-          "courseId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "photoLoction": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "Lecture": {
         "type": "object",
         "properties": {
@@ -955,7 +935,7 @@
             "type": "string",
             "nullable": true
           },
-          "lectureLocation": {
+          "lecturePDF": {
             "type": "string",
             "nullable": true
           },
@@ -991,7 +971,7 @@
             "type": "string",
             "nullable": true
           },
-          "lectureLoction": {
+          "lecturePDF": {
             "type": "string",
             "nullable": true
           },
@@ -999,12 +979,13 @@
             "type": "integer",
             "format": "int32"
           },
+          "titleCourse": {
+            "type": "string",
+            "nullable": true
+          },
           "adminId": {
             "type": "integer",
             "format": "int32"
-          },
-          "course": {
-            "$ref": "#/components/schemas/CourseReadDto"
           }
         },
         "additionalProperties": false
@@ -1020,7 +1001,7 @@
             "type": "string",
             "nullable": true
           },
-          "sectionLocation": {
+          "sectionPDF": {
             "type": "string",
             "nullable": true
           },
@@ -1049,7 +1030,7 @@
             "type": "string",
             "nullable": true
           },
-          "sectionLocation": {
+          "sectionPDF": {
             "type": "string",
             "nullable": true
           },
