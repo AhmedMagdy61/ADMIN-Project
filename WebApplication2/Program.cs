@@ -16,7 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 // ======= Add DB Context =======
-builder.Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddDbContext<graduationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ======= Add JWT Authentication =======

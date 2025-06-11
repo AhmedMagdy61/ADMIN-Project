@@ -16,11 +16,11 @@ namespace WebApplication2.Controllers
     [Route("api/[controller]")]
     public class SectionController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly graduationDbContext _context;
         private readonly FileUploadService _fileUploadService;
 
 
-        public SectionController(AppDbContext context,FileUploadService fileUploadService)
+        public SectionController(graduationDbContext context,FileUploadService fileUploadService)
         {
             _context = context;
             _fileUploadService = fileUploadService;
@@ -37,14 +37,14 @@ namespace WebApplication2.Controllers
         {
             var section = await _context.Sections.FindAsync(id);
             if (section == null)
-                return NotFound();
+                return NotFound("Section Not Exist");
             var dto = new SectionReadDto
             {
-                SectionId = section.SectionId,
+                SectionId = section.Id,
                 Title = section.Title,
                 LectureId = section.LectureId,
                 AdminId = section.AdminId,
-                SectionPDF = section.SectionPDF
+                SectionPDF = section.FileName
 
             };
             return Ok(dto);
@@ -65,34 +65,42 @@ namespace WebApplication2.Controllers
                 return BadRequest("Admin not found.");
             }
      
-            var lectureExists = await _context.Lectures.AnyAsync(l => l.LectureId == dto.LectureId);
-            if (!lectureExists)
+            var lecture = await _context.Lectures
+                .Include(l => l.Course)
+                .FirstOrDefaultAsync(l => l.Id == dto.LectureId);
+      
+            if (lecture == null)
             {
-                return BadRequest("lecture not found.");
+                return BadRequest("Lecture not found.");
             }
-
             if (dto == null)
             {
                 return BadRequest("The input data is null.");
             }
-            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section");
-
+            var invalidChars = Path.GetInvalidFileNameChars();
+            if (dto.Title.Any(c => invalidChars.Contains(c)))
+            {
+                return BadRequest("Course title contains invalid characters (\\ / : * ? \" < > |).");
+            }
+            var courseTitle = lecture.Course?.Title ?? "UnknownCourse";
+            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", courseTitle, "Section");
             if (!Directory.Exists(uploadPath))
             {
                 Directory.CreateDirectory(uploadPath);
             }
-            var filePath = Path.Combine(uploadPath, dto.SectionPDF.FileName);
+            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.SectionPDF.FileName);
+            var newPath = Path.Combine(uploadPath, uniqueFileName);
 
             try
             {
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                using (var stream = new FileStream(newPath, FileMode.Create))
                 {
                     await dto.SectionPDF.CopyToAsync(stream);
                 }
                 var section = new Section
                 {
                     Title = dto.Title,
-                    SectionPDF = dto.SectionPDF.FileName,
+                    FileName = uniqueFileName,
                     LectureId = dto.LectureId,
                     AdminId = dto.AdminId
                 };
@@ -110,7 +118,10 @@ namespace WebApplication2.Controllers
         [HttpPost("update/{SectionID}")]
         public async Task<IActionResult> UpdateSection(int SectionID, [FromForm] SectionUpdateDto dto)
         {
-            var section = await _context.Sections.FindAsync(SectionID);
+            var section = await _context.Sections
+                    .Include(s => s.Lecture)
+                    .ThenInclude(l => l.Course)
+                    .FirstOrDefaultAsync(s => s.Id == SectionID);
             if (section == null)
             {
                 return NotFound("Section not found.");
@@ -118,13 +129,17 @@ namespace WebApplication2.Controllers
             if (!string.IsNullOrWhiteSpace(dto.Title))
             {
                 var sectionExists = await _context.Sections
-                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.SectionId != SectionID);
+                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.Id != SectionID);
 
                 if (sectionExists)
                 {
                     return BadRequest("A Section with the same name already exists.");
                 }
-
+                var invalidChars = Path.GetInvalidFileNameChars();
+                if (dto.Title.Any(c => invalidChars.Contains(c)))
+                {
+                    return BadRequest("Course title contains invalid characters (\\ / : * ? \" < > |).");
+                }
                 section.Title = dto.Title;
             }
 
@@ -140,29 +155,33 @@ namespace WebApplication2.Controllers
 
             if (dto.LectureId.HasValue)
             {
-                var lectureExists = await _context.Lectures.AnyAsync(c => c.LectureId == dto.LectureId);
-                if (!lectureExists)
+                var lectureExists = await _context.Lectures
+                           .Include(l => l.Course)
+                           .FirstOrDefaultAsync(c => c.Id == dto.LectureId);
+                if (lectureExists == null)
                 {
                     return BadRequest("Lecture not found.");
                 }
-                section.LectureId = dto.LectureId.Value;
-            }
 
+                section.LectureId = dto.LectureId.Value;
+                section.Lecture = lectureExists;
+            }
+        
             // تحديث الملف لو تم إرساله
             if (dto.SectionPDF != null)
             {
                 // اسم الملف القديم
-                var oldFileName = section.SectionPDF;
+                var oldFileName = section.FileName;
 
                 // ✅ تأكد إن الملف القديم مش مستخدم في Section تانية
                 if (!string.IsNullOrEmpty(oldFileName))
                 {
                     var isFileUsedElsewhere = await _context.Sections
-                        .AnyAsync(s => s.SectionId != section.SectionId && s.SectionPDF == oldFileName);
+                        .AnyAsync(s => s.Id != section.Id && s.FileName == oldFileName);
 
                     if (!isFileUsedElsewhere)
                     {
-                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section", oldFileName);
+                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", section.Lecture?.Course?.Title ?? "UnknownCourse", "Section", oldFileName);
                         if (System.IO.File.Exists(oldPath))
                         {
                             System.IO.File.Delete(oldPath);
@@ -171,7 +190,8 @@ namespace WebApplication2.Controllers
                 }
 
                 // ✅ إنشاء مسار التخزين
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section");
+                var courseTitle =section.Lecture?.Course?.Title ?? "UnknownCourse";
+                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", section.Lecture?.Course?.Title ?? "UnknownCourse", "Section");
                 if (!Directory.Exists(uploadPath))
                 {
                     Directory.CreateDirectory(uploadPath);
@@ -186,7 +206,7 @@ namespace WebApplication2.Controllers
                     await dto.SectionPDF.CopyToAsync(stream);
                 }
 
-                section.SectionPDF = uniqueFileName;
+                section.FileName = uniqueFileName;
             }
 
             await _context.SaveChangesAsync();
@@ -196,15 +216,18 @@ namespace WebApplication2.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSection(int id)
         {
-            var section = await _context.Sections.FindAsync(id);
-            if (section == null)
-                return NotFound(new { message = "Section not found." });
+            var section = await _context.Sections
+                .Include(s => s.Lecture)
+                .ThenInclude(l => l.Course)
+                .FirstOrDefaultAsync(s => s.Id == id); if (section == null)
+                return NotFound( "Section not found.");
 
 
-            if (!string.IsNullOrEmpty(section.SectionPDF))
+            if (!string.IsNullOrEmpty(section.FileName))
             {
-                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Section",
-                                            section.SectionPDF);
+                var courseTitle = section.Lecture?.Course?.Title ?? "UnknownCourse";
+                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", courseTitle, "Section", section.FileName);
+
                 if (System.IO.File.Exists(oldPath))
                 {
                     System.IO.File.Delete(oldPath);

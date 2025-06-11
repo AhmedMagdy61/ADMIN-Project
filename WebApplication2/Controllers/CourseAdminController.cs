@@ -14,11 +14,11 @@ namespace WebApplication2.Controllers
 
     [ApiController]
     [Route("api/[controller]")]
-    public class CourseController : ControllerBase
+    public class CourseAdminController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly graduationDbContext _context;
 
-        public CourseController(AppDbContext context)
+        public CourseAdminController(graduationDbContext  context)
         {
             _context = context;
         }
@@ -37,10 +37,10 @@ namespace WebApplication2.Controllers
             var course = _context.Courses
                         .Include(c => c.Lectures)
                         .ThenInclude(l => l.Sections)
-                        .FirstOrDefault(c => c.CourseId == id);
+                        .FirstOrDefault(c => c.Id == id);
 
             if (course == null)
-                return NotFound();
+                return NotFound("Not Found");
 
             return  course;
         }
@@ -66,19 +66,33 @@ namespace WebApplication2.Controllers
             {
                 return BadRequest("No file uploaded.");
             }
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var extension = Path.GetExtension(dto.Photo.FileName).ToLower();
 
-            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course");
+            if (!allowedExtensions.Contains(extension))
+            {
+                return BadRequest("Only image files (.jpg, .jpeg, .png, .gif) are allowed.");
+            }
+
+            var invalidChars = Path.GetInvalidFileNameChars();
+            if (dto.Title.Any(c => invalidChars.Contains(c)))
+            {
+                return BadRequest("Course title contains invalid characters (\\ / : * ? \" < > |).");
+            }
+            var courseFolderName = dto.Title.Trim();
+
+            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", courseFolderName);
 
             if (!Directory.Exists(uploadPath))
             {
                 Directory.CreateDirectory(uploadPath);
             }
-            var filePath = Path.Combine(uploadPath, dto.Photo.FileName);
+            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.Photo.FileName);
+            var newPath = Path.Combine(uploadPath, uniqueFileName);
             try
             {
-                Console.WriteLine("filePath: " + filePath);
-                Console.WriteLine("PhotoLocation.FileName: " + dto.Photo.FileName);
-                using (var stream = new FileStream(filePath, FileMode.Create))
+                
+                using (var stream = new FileStream(newPath, FileMode.Create))
                 {
                     await dto.Photo.CopyToAsync(stream);
                 }
@@ -87,7 +101,7 @@ namespace WebApplication2.Controllers
                 {
                     Title = dto.Title,
                     AdminId = dto.AdminId,
-                    Photo = dto.Photo.FileName,
+                    ImageName = uniqueFileName,
                     Lectures = new List<Lecture>()
                 };
                 
@@ -95,7 +109,7 @@ namespace WebApplication2.Controllers
             await _context.SaveChangesAsync();
             var courseWithLectures = await _context.Courses
                     .Include(c => c.Lectures)
-                    .FirstOrDefaultAsync(c => c.CourseId == course.CourseId);
+                    .FirstOrDefaultAsync(c => c.Id == course.Id);
 
 
                 return Ok(courseWithLectures);
@@ -123,38 +137,58 @@ namespace WebApplication2.Controllers
                 }
                 course.AdminId = dto.AdminId.Value;
             }
-
+            var oldTitle = course.Title;
             if (!string.IsNullOrWhiteSpace(dto.Title))
             {
                 var courseExists = await _context.Courses
-                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.CourseId != CourseID);
+                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.Id != CourseID);
 
                 if (courseExists)
                 {
                     return BadRequest("A course with the same name already exists.");
                 }
+                var invalidChars = Path.GetInvalidFileNameChars();
+                if (dto.Title.Any(c => invalidChars.Contains(c)))
+                {
+                    return BadRequest("Course title contains invalid characters (\\ / : * ? \" < > |).");
+                }
+                if (!oldTitle.Equals(dto.Title, StringComparison.OrdinalIgnoreCase))
+                {
+                    var oldFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", oldTitle.Trim());
+                    var newFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", dto.Title.Trim());
 
+                    if (Directory.Exists(oldFolder))
+                    {
+                        Directory.Move(oldFolder, newFolder); // rename
+                    }
+                }
                 course.Title = dto.Title;
             }
           
             if (dto.Photo != null)
             {
-                var oldFileName = course.Photo;
-                if (!string.IsNullOrEmpty(course.Photo))
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                var extension = Path.GetExtension(dto.Photo.FileName).ToLower();
+
+                if (!allowedExtensions.Contains(extension))
+                {
+                    return BadRequest("Only image files (.jpg, .jpeg, .png, .gif) are allowed.");
+                }
+                var oldFileName = course.ImageName;
+                if (!string.IsNullOrEmpty(oldFileName))
                 {
                     var isFileUsedElsewhere = await _context.Courses
-                                      .AnyAsync(s => s.CourseId != course.CourseId && s.Photo == oldFileName);
+                                      .AnyAsync(s => s.Id != course.Id && s.ImageName == oldFileName);
                     if (!isFileUsedElsewhere)
                     {
-                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course", oldFileName);
+                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files",course.Title, oldFileName);
                         if (System.IO.File.Exists(oldPath))
                         {
                             System.IO.File.Delete(oldPath);
                         }
                     }
                 }
-
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course");
+                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", course.Title);
 
                 if (!Directory.Exists(uploadPath))
                 {
@@ -167,13 +201,13 @@ namespace WebApplication2.Controllers
                     await dto.Photo.CopyToAsync(stream);
                 }
 
-                course.Photo = uniqueFileName;
+                course.ImageName = uniqueFileName;
             }
 
             await _context.SaveChangesAsync();
             var courseWithLectures = await _context.Courses
                   .Include(c => c.Lectures).ThenInclude(s=> s.Sections)
-                  .FirstOrDefaultAsync(c => c.CourseId == CourseID);
+                  .FirstOrDefaultAsync(c => c.Id == CourseID);
             return Ok(courseWithLectures);
         }
 
@@ -184,13 +218,11 @@ namespace WebApplication2.Controllers
             var course = await _context.Courses.FindAsync(id);
             if (course == null)
                 return NotFound(new { message = "Course not found." });
-            if (!string.IsNullOrEmpty(course.Photo))
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", course.Title);
+            if (Directory.Exists(folderPath))
             {
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course", course.Photo);
-                if (System.IO.File.Exists(filePath))
-                {
-                    System.IO.File.Delete(filePath);
-                }
+                Directory.Delete(folderPath, recursive: true); // recursive = true لمسح كل اللي جواه
             }
 
             try

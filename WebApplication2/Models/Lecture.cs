@@ -9,10 +9,10 @@ namespace WebApplication2.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int LectureId { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
 
-        public string LecturePDF { get; set; }
+        public string FileName { get; set; }
         public int CourseId { get; set; }
 
 
@@ -22,7 +22,7 @@ namespace WebApplication2.Models
         public Admin Admin { get; set; }
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public Course Course { get; set; }
-        public ICollection<Section>? Sections { get; set; }
+        public ICollection<Section>? Sections { get; set; } = new List<Section>();
     }
 
 }

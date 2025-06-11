@@ -168,10 +168,10 @@
         }
       }
     },
-    "/api/Course": {
+    "/api/CourseAdmin": {
       "get": {
         "tags": [
-          "Course"
+          "CourseAdmin"
         ],
         "responses": {
           "200": {
@@ -207,7 +207,7 @@
       },
       "post": {
         "tags": [
-          "Course"
+          "CourseAdmin"
         ],
         "requestBody": {
           "content": {
@@ -271,10 +271,10 @@
         }
       }
     },
-    "/api/Course/{id}": {
+    "/api/CourseAdmin/{id}": {
       "get": {
         "tags": [
-          "Course"
+          "CourseAdmin"
         ],
         "parameters": [
           {
@@ -312,7 +312,7 @@
       },
       "delete": {
         "tags": [
-          "Course"
+          "CourseAdmin"
         ],
         "parameters": [
           {
@@ -332,10 +332,10 @@
         }
       }
     },
-    "/api/Course/update/{CourseID}": {
+    "/api/CourseAdmin/update/{CourseID}": {
       "post": {
         "tags": [
-          "Course"
+          "CourseAdmin"
         ],
         "parameters": [
           {
@@ -898,7 +898,7 @@
       "Course": {
         "type": "object",
         "properties": {
-          "courseId": {
+          "id": {
             "type": "integer",
             "format": "int32"
           },
@@ -906,7 +906,7 @@
             "type": "string",
             "nullable": true
           },
-          "photo": {
+          "imageName": {
             "type": "string",
             "nullable": true
           },
@@ -927,7 +927,7 @@
       "Lecture": {
         "type": "object",
         "properties": {
-          "lectureId": {
+          "id": {
             "type": "integer",
             "format": "int32"
           },
@@ -935,7 +935,7 @@
             "type": "string",
             "nullable": true
           },
-          "lecturePDF": {
+          "fileName": {
             "type": "string",
             "nullable": true
           },
@@ -993,7 +993,7 @@
       "Section": {
         "type": "object",
         "properties": {
-          "sectionId": {
+          "id": {
             "type": "integer",
             "format": "int32"
           },
@@ -1001,7 +1001,7 @@
             "type": "string",
             "nullable": true
           },
-          "sectionPDF": {
+          "fileName": {
             "type": "string",
             "nullable": true
           },

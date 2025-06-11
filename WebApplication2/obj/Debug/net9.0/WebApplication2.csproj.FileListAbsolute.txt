@@ -671,10 +671,10 @@ C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\staticwebasse
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication2.props
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebApplication2.props
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\WebAppli.0DB3FC1A.Up2Date
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\WebApplication2.dll
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\refint\WebApplication2.dll
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\WebApplication2.pdb
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\WebApplication2.genruntimeconfig.cache
 C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\ref\WebApplication2.dll
+C:\Users\ahmed\source\repos\ADMIN\WebApplication2\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

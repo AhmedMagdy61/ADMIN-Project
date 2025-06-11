@@ -13,9 +13,9 @@ namespace WebApplication2.Controllers
     [Route("api/[controller]")]
     public class AdminController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly graduationDbContext _context;
 
-        public AdminController(AppDbContext context)
+        public AdminController(graduationDbContext context)
         {
             _context = context;
         }

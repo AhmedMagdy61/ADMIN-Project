@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ucqw87MAgRPjgQ7NBLsdBRcunG1RbWNvcmCdFXmlojc=",
+  "Hash": "Q+VmRN1D0TOLqSMYpXX9yCjDYqG+vjbLIhBrwPnjyyg=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -15,6 +15,626 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\.gitkeep",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "#[.{fingerprint}]?.gitkeep",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3r8b2a0bt1",
+      "Integrity": "8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.gitkeep"
+    },
+    {
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\745339fa-a446-48d7-96e5-a5103f56053d.jpg",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Files/Security/745339fa-a446-48d7-96e5-a5103f56053d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "enbl2ib2sg",
+      "Integrity": "OiiAkwF6lUFXd4BBBJ2cAgaJDY3OvmuECPszESwUz/U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Security\\745339fa-a446-48d7-96e5-a5103f56053d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\31b9c534-172b-4458-b6ed-92086ee25116.pdf",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Files/Security/Lecture/31b9c534-172b-4458-b6ed-92086ee25116#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q6e7ca1h4u",
+      "Integrity": "bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Security\\Lecture\\31b9c534-172b-4458-b6ed-92086ee25116.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\5c27c159-524c-473b-bc24-437a7c838c65.pdf",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Files/Security/Lecture/5c27c159-524c-473b-bc24-437a7c838c65#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b03itylafv",
+      "Integrity": "RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Security\\Lecture\\5c27c159-524c-473b-bc24-437a7c838c65.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\768ac092-d851-4c4a-bdc0-47afeb6b0607.pdf",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Files/Security/Lecture/768ac092-d851-4c4a-bdc0-47afeb6b0607#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q6e7ca1h4u",
+      "Integrity": "bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Security\\Lecture\\768ac092-d851-4c4a-bdc0-47afeb6b0607.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Section\\9f311b3b-1b18-46cf-ac26-ffff133135cd.pdf",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Files/Security/Section/9f311b3b-1b18-46cf-ac26-ffff133135cd#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b03itylafv",
+      "Integrity": "RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Security\\Section\\9f311b3b-1b18-46cf-ac26-ffff133135cd.pdf"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": ".3r8b2a0bt1.gitkeep",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\.gitkeep",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 01:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3r8b2a0bt1"
+        },
+        {
+          "Name": "label",
+          "Value": ".gitkeep"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
+      "Route": ".gitkeep",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\.gitkeep",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 01:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/745339fa-a446-48d7-96e5-a5103f56053d.enbl2ib2sg.jpg",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\745339fa-a446-48d7-96e5-a5103f56053d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OiiAkwF6lUFXd4BBBJ2cAgaJDY3OvmuECPszESwUz/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:35:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "enbl2ib2sg"
+        },
+        {
+          "Name": "label",
+          "Value": "Files/Security/745339fa-a446-48d7-96e5-a5103f56053d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OiiAkwF6lUFXd4BBBJ2cAgaJDY3OvmuECPszESwUz/U="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/745339fa-a446-48d7-96e5-a5103f56053d.jpg",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\745339fa-a446-48d7-96e5-a5103f56053d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OiiAkwF6lUFXd4BBBJ2cAgaJDY3OvmuECPszESwUz/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:35:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OiiAkwF6lUFXd4BBBJ2cAgaJDY3OvmuECPszESwUz/U="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Lecture/31b9c534-172b-4458-b6ed-92086ee25116.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\31b9c534-172b-4458-b6ed-92086ee25116.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "961118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:39:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Lecture/31b9c534-172b-4458-b6ed-92086ee25116.q6e7ca1h4u.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\31b9c534-172b-4458-b6ed-92086ee25116.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "961118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:39:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q6e7ca1h4u"
+        },
+        {
+          "Name": "label",
+          "Value": "Files/Security/Lecture/31b9c534-172b-4458-b6ed-92086ee25116.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Lecture/5c27c159-524c-473b-bc24-437a7c838c65.b03itylafv.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\5c27c159-524c-473b-bc24-437a7c838c65.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "488445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:37:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b03itylafv"
+        },
+        {
+          "Name": "label",
+          "Value": "Files/Security/Lecture/5c27c159-524c-473b-bc24-437a7c838c65.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Lecture/5c27c159-524c-473b-bc24-437a7c838c65.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\5c27c159-524c-473b-bc24-437a7c838c65.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "488445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:37:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Lecture/768ac092-d851-4c4a-bdc0-47afeb6b0607.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\768ac092-d851-4c4a-bdc0-47afeb6b0607.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "961118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:37:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Lecture/768ac092-d851-4c4a-bdc0-47afeb6b0607.q6e7ca1h4u.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Lecture\\768ac092-d851-4c4a-bdc0-47afeb6b0607.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "961118"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:37:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q6e7ca1h4u"
+        },
+        {
+          "Name": "label",
+          "Value": "Files/Security/Lecture/768ac092-d851-4c4a-bdc0-47afeb6b0607.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bngP/sYPr5jujPIaDq3UveqapBVtAKuhTTHR58Ag7Lo="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Section/9f311b3b-1b18-46cf-ac26-ffff133135cd.b03itylafv.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Section\\9f311b3b-1b18-46cf-ac26-ffff133135cd.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "488445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:49:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b03itylafv"
+        },
+        {
+          "Name": "label",
+          "Value": "Files/Security/Section/9f311b3b-1b18-46cf-ac26-ffff133135cd.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE="
+        }
+      ]
+    },
+    {
+      "Route": "Files/Security/Section/9f311b3b-1b18-46cf-ac26-ffff133135cd.pdf",
+      "AssetFile": "C:\\Users\\ahmed\\source\\repos\\ADMIN\\WebApplication2\\wwwroot\\Files\\Security\\Section\\9f311b3b-1b18-46cf-ac26-ffff133135cd.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "488445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 03:49:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RUu8NaX5DSbNBd6XsIzaJKXHn6M6M05xdsgSktB6BVE="
+        }
+      ]
+    }
+  ]
 }

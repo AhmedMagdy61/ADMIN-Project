@@ -8,15 +8,15 @@ namespace WebApplication2.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int CourseId { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
-        public string Photo { get; set; } = string.Empty;
+        public string ImageName { get; set; } = string.Empty;
         public int AdminId { get; set; }
         // [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         [JsonIgnore]
         public Admin Admin { get; set; }
 
-        public ICollection<Lecture> Lectures { get; set; }
+        public ICollection<Lecture> Lectures { get; set; } = new List<Lecture>();
     }
 
 }

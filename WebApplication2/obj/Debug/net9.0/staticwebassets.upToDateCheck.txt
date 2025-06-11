@@ -1,3 +1,6 @@
-wwwroot\uploads\Course\Lecture\683ae493-d762-492e-abaf-c78a2173e6c0.pdf
-wwwroot\uploads\Course\Lecture\af63b2dc-6f27-4b4f-be54-fb8b976fe657.pdf
-wwwroot\uploads\Course\Section\lec-1.pdf
+wwwroot\.gitkeep
+wwwroot\Files\Security\745339fa-a446-48d7-96e5-a5103f56053d.jpg
+wwwroot\Files\Security\Lecture\31b9c534-172b-4458-b6ed-92086ee25116.pdf
+wwwroot\Files\Security\Lecture\5c27c159-524c-473b-bc24-437a7c838c65.pdf
+wwwroot\Files\Security\Lecture\768ac092-d851-4c4a-bdc0-47afeb6b0607.pdf
+wwwroot\Files\Security\Section\9f311b3b-1b18-46cf-ac26-ffff133135cd.pdf

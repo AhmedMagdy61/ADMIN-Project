@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Humanizer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.AppDb;
 using WebApplication2.AuthServices;
@@ -15,11 +16,11 @@ namespace WebApplication2.Controllers
     [Route("api/[controller]")]
     public class LectureController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly graduationDbContext _context;
         private readonly FileUploadService _fileUploadService;
 
 
-        public LectureController(AppDbContext context, FileUploadService fileUploadService)
+        public LectureController(graduationDbContext context, FileUploadService fileUploadService)
         {
             _context = context;
             _fileUploadService = fileUploadService;
@@ -33,9 +34,9 @@ namespace WebApplication2.Controllers
                 .Include(l => l.Course)
                 .Select(l => new LectureReadDto
                 {
-                    LectureId = l.LectureId,
+                    LectureId = l.Id,
                     Title = l.Title,
-                    LecturePDF = l.LecturePDF,
+                    LecturePDF = l.FileName,
                     CourseId = l.CourseId,
                     TitleCourse = l.Course.Title,
                     AdminId = l.AdminId
@@ -53,7 +54,7 @@ namespace WebApplication2.Controllers
         {
             var lecture = await _context.Lectures
                             .Include(l => l.Course)
-                            .FirstOrDefaultAsync(l => l.LectureId == id);
+                            .FirstOrDefaultAsync(l => l.Id == id);
             //var lecture = await _context.Lectures.FindAsync(id);
             if (lecture == null)
             {
@@ -61,9 +62,9 @@ namespace WebApplication2.Controllers
             }
             var dto = new LectureReadDto
             {
-                LectureId = lecture.LectureId,
+                LectureId = lecture.Id,
                 Title = lecture.Title,
-                LecturePDF = lecture.LecturePDF,
+                LecturePDF = lecture.FileName,
                 CourseId = lecture.CourseId,
                 AdminId = lecture.AdminId,
                 TitleCourse = lecture.Course.Title
@@ -89,42 +90,58 @@ namespace WebApplication2.Controllers
             {
                 return BadRequest("Admin not found.");
             }
-            var courseExists = await _context.Courses.AnyAsync(c => c.CourseId == dto.CourseId);
-            if (!courseExists)
-            {
-                return BadRequest("Course not found.");
-            }
-
             if (dto.LecturePDF == null)
             {
                 return BadRequest("No file uploaded.");
             }
-            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Lecture");
+
+            var course = await _context.Courses.FirstOrDefaultAsync(c => c.Id == dto.CourseId);
+            if (course == null)
+            {
+                return NotFound("Course not found.");
+            }
+            var invalidChars = Path.GetInvalidFileNameChars();
+            if (dto.Title.Any(c => invalidChars.Contains(c)))
+            {
+                return BadRequest("Course title contains invalid characters (\\ / : * ? \" < > |).");
+            }
+            var CourseTitle = course.Title;
+
+            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", CourseTitle,"Lecture");
 
             if (!Directory.Exists(uploadPath))
             {
                 Directory.CreateDirectory(uploadPath);
             }
-            var filePath = Path.Combine(uploadPath, dto.LecturePDF.FileName);
+            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.LecturePDF.FileName);
+            var newPath = Path.Combine(uploadPath, uniqueFileName);
             try
             {
-                Console.WriteLine("filePath: " + filePath);
-                Console.WriteLine("LectureLocation.FileName: " + dto.LecturePDF.FileName);
-                using (var stream = new FileStream(filePath, FileMode.Create))
+             
+                using (var stream = new FileStream(newPath, FileMode.Create))
                 {
                     await dto.LecturePDF.CopyToAsync(stream);
                 }
                 var lecture = new Lecture
                 {
                     Title = dto.Title,
-                    LecturePDF = dto.LecturePDF.FileName, // full physical path
+                    FileName = uniqueFileName,
                     CourseId = dto.CourseId,
                     AdminId = dto.AdminId
                 };
                 _context.Lectures.Add(lecture);
                 await _context.SaveChangesAsync();
+                var result = new LectureReadDto
+                {
+                    AdminId = lecture.AdminId,
+                    CourseId = course.Id,
+                    TitleCourse = course.Title,
+                    LectureId = lecture.Id,
+                    Title = lecture.Title,
+                    LecturePDF = lecture.FileName
 
-                return Ok(lecture);
+                };
+                return Ok(result);
             }
             catch (Exception ex)
             {
@@ -135,7 +152,9 @@ namespace WebApplication2.Controllers
         [HttpPost("update/{LectureId}")]
         public async Task<IActionResult> UpdateLecture(int LectureId, [FromForm] LectureUpdateDto dto)
         {
-            var lecture = await _context.Lectures.FindAsync(LectureId);
+            var lecture = await _context.Lectures
+                .Include(l => l.Course)
+                .FirstOrDefaultAsync(l => l.Id == LectureId); 
             if (lecture == null)
             {
                 return NotFound("Lecture not found.");
@@ -143,12 +162,16 @@ namespace WebApplication2.Controllers
             if (!string.IsNullOrWhiteSpace(dto.Title))
             {
                 var lectureExists = await _context.Lectures
-                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.LectureId != LectureId);
+                    .AnyAsync(c => c.Title.ToLower() == dto.Title.ToLower() && c.Id != LectureId);
                 if (lectureExists)
                 {
                     return BadRequest("A Lecture with the same name already exists.");
                 }
-
+                var invalidChars = Path.GetInvalidFileNameChars();
+                if (dto.Title.Any(c => invalidChars.Contains(c)))
+                {
+                    return BadRequest("Course title contains invalid characters (\\ / : * ? \" < > |).");
+                }
                 lecture.Title = dto.Title;
             }
    
@@ -161,35 +184,47 @@ namespace WebApplication2.Controllers
                 }
                 lecture.AdminId = dto.AdminId.Value;
             }
+            int courseIdToUse;
             if (dto.CourseId.HasValue)
             {
-                var courseExists = await _context.Courses.AnyAsync(c => c.CourseId == dto.CourseId);
+                var courseExists = await _context.Courses.AnyAsync(c => c.Id == dto.CourseId.Value);
                 if (!courseExists)
                 {
                     return BadRequest("Course not found.");
                 }
                 lecture.CourseId = dto.CourseId.Value;
+                courseIdToUse = dto.CourseId.Value;
             }
-           
+            else
+            {
+                courseIdToUse = lecture.CourseId;
+            }
+
             // تحديث الملف لو تم إرساله
             if (dto.LecturePDF != null)
             {
-                var oldFileName = lecture.LecturePDF;
-
+                var course = await _context.Courses.FirstOrDefaultAsync(c => c.Id == courseIdToUse);
+                if (course == null)
+                {
+                    return BadRequest("Associated course not found.");
+                }
+                var CourseTitle = course.Title;
+                var oldFileName = lecture.FileName;
                 if (!string.IsNullOrEmpty(oldFileName))
                 {
                     var isFileUsedElsewhere = await _context.Lectures
-                    .AnyAsync(s => s.LectureId != lecture.LectureId && s.LecturePDF == oldFileName);
+                    .AnyAsync(s => s.Id != lecture.Id && s.FileName == oldFileName);
                     if (!isFileUsedElsewhere)
                     {
-                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Lecture", oldFileName);
+                        var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", CourseTitle, "Lecture", oldFileName);
                         if (System.IO.File.Exists(oldPath))
                         {
                             System.IO.File.Delete(oldPath);
                         }
                     }
                 }
-                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Lecture");
+
+                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", CourseTitle, "Lecture");
 
                 if (!Directory.Exists(uploadPath))
                 {
@@ -202,23 +237,54 @@ namespace WebApplication2.Controllers
                     await dto.LecturePDF.CopyToAsync(stream);
                 }
 
-                lecture.LecturePDF = uniqueFileName;
+                lecture.FileName = uniqueFileName;
             }
 
-            await _context.SaveChangesAsync();
-            return Ok(lecture);
+             await _context.SaveChangesAsync();
+               var result = new LectureReadDto
+                {
+                    AdminId = lecture.AdminId,
+                    LectureId = lecture.Id,
+                    Title = lecture.Title,
+                    LecturePDF = lecture.FileName,
+                    CourseId = lecture.CourseId,
+                    TitleCourse = lecture.Course.Title
+
+                };
+            return Ok(result);
         }
         
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteLecture(int id)
         {
-            var lecture = await _context.Lectures.FindAsync(id);
+            var lecture = await _context.Lectures
+                   .Include(s => s.Sections).Include(l => l.Course)
+                   .FirstOrDefaultAsync(l => l.Id == id);
             if (lecture == null)
                 return NotFound(new { message = "Lecture not found." });
 
-            if (!string.IsNullOrEmpty(lecture.LecturePDF))
+            var CourseTitle = lecture.Course.Title;
+            foreach (var section in lecture.Sections)
             {
-                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads\\Course\\Lecture", lecture.LecturePDF);
+                Console.WriteLine($"Trying to delete section file: {section.FileName}");
+
+                if (!string.IsNullOrEmpty(section.FileName))
+                {
+                    var sectionFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", CourseTitle, "Section", section.FileName);
+                    if (System.IO.File.Exists(sectionFilePath))
+                    {
+                        System.IO.File.Delete(sectionFilePath);
+                        Console.WriteLine("File deleted: " + sectionFilePath);
+                    }
+                    else
+                    {
+                        Console.WriteLine("File NOT found: " + sectionFilePath);
+                    }
+                }
+            }
+            if (!string.IsNullOrEmpty(lecture.FileName))
+            {
+                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Files", CourseTitle, "Lecture", lecture.FileName);
                 if (System.IO.File.Exists(oldPath))
                 {
                     System.IO.File.Delete(oldPath);

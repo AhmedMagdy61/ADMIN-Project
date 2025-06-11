@@ -29,15 +29,15 @@ namespace WebApplication2.Migrations
                 name: "Courses",
                 columns: table => new
                 {
-                    CourseId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Photo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AdminId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Courses", x => x.CourseId);
+                    table.PrimaryKey("PK_Courses", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Courses_Admins_AdminId",
                         column: x => x.AdminId,
@@ -50,16 +50,16 @@ namespace WebApplication2.Migrations
                 name: "Lectures",
                 columns: table => new
                 {
-                    LectureId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LecturePDF = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
                     AdminId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Lectures", x => x.LectureId);
+                    table.PrimaryKey("PK_Lectures", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Lectures_Admins_AdminId",
                         column: x => x.AdminId,
@@ -70,7 +70,7 @@ namespace WebApplication2.Migrations
                         name: "FK_Lectures_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
-                        principalColumn: "CourseId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -78,16 +78,16 @@ namespace WebApplication2.Migrations
                 name: "Sections",
                 columns: table => new
                 {
-                    SectionId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SectionPDF = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LectureId = table.Column<int>(type: "int", nullable: false),
                     AdminId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sections", x => x.SectionId);
+                    table.PrimaryKey("PK_Sections", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Sections_Admins_AdminId",
                         column: x => x.AdminId,
@@ -98,7 +98,7 @@ namespace WebApplication2.Migrations
                         name: "FK_Sections_Lectures_LectureId",
                         column: x => x.LectureId,
                         principalTable: "Lectures",
-                        principalColumn: "LectureId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 

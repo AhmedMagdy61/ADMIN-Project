@@ -8,10 +8,10 @@ namespace WebApplication2.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int SectionId { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
 
-        public string SectionPDF { get; set; }
+        public string FileName { get; set; }
 
         public int LectureId { get; set; }
        

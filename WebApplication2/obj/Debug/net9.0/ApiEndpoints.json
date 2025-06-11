@@ -98,9 +98,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication2.Controllers.CourseController",
+    "ContainingType": "WebApplication2.Controllers.CourseAdminController",
     "Method": "GetCourses",
-    "RelativePath": "api/Course",
+    "RelativePath": "api/CourseAdmin",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -118,9 +118,9 @@
     ]
   },
   {
-    "ContainingType": "WebApplication2.Controllers.CourseController",
+    "ContainingType": "WebApplication2.Controllers.CourseAdminController",
     "Method": "CreateCourse",
-    "RelativePath": "api/Course",
+    "RelativePath": "api/CourseAdmin",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -154,9 +154,9 @@
     ]
   },
   {
-    "ContainingType": "WebApplication2.Controllers.CourseController",
+    "ContainingType": "WebApplication2.Controllers.CourseAdminController",
     "Method": "GetCourse",
-    "RelativePath": "api/Course/{id}",
+    "RelativePath": "api/CourseAdmin/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -180,9 +180,9 @@
     ]
   },
   {
-    "ContainingType": "WebApplication2.Controllers.CourseController",
+    "ContainingType": "WebApplication2.Controllers.CourseAdminController",
     "Method": "DeleteCourse",
-    "RelativePath": "api/Course/{id}",
+    "RelativePath": "api/CourseAdmin/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -196,9 +196,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication2.Controllers.CourseController",
+    "ContainingType": "WebApplication2.Controllers.CourseAdminController",
     "Method": "UpdateSection",
-    "RelativePath": "api/Course/update/{CourseID}",
+    "RelativePath": "api/CourseAdmin/update/{CourseID}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
